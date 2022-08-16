@@ -1,56 +1,97 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            table,
-            td,
-            th{
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 5px;
-            }
-
-            table{
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-            <thead>
-                <tr>
-                    <th>nombre</th>
-                    <th colspan="1">escuderias</th>
-                    <th>periodo</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">Valteri Bottas</td>
-                        <td>Mercedes</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Alfa romeo</td>
-                        <td>2022</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Fernando Alonso</td>
-                        <td>Renault</td>
-                        <td>2004</td>
-                    </tr>
-                    <tr>
-                        <td>ferrari</td>
-                        <td>2011</td>
-                    </tr>
-                    <tr>
-                        <td>mclaren</td>
-                        <td>2015</td>
-                    </tr>
-                    <td>alpine</td>
-                    <td>2022</td>
-                </tbody>
-
-            </thead>
-        </table>
-    </body>
-</html>
+<style>
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3faac0;
+    }
+    div.container {
+    overflow: auto;
+    }
+    h2{
+        color: black;
+    }
+    header {
+    background-color: #e5e5e5;
+    padding: 15px;
+    text-align: center;
+    }
+    nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+    }
+    nav ul {
+    padding-left: 0px;
+    }
+    nav li {
+    list-style: none;
+    }
+    nav li a {
+background-color: #e5e5e5;
+padding: 8px;
+margin-top: 7px;
+display: block;
+width: 100%;
+color: rgb(34, 183, 183);
+font-weight: 700;
+}
+main {
+float: left;
+width: 60%;
+padding: 0 20px;
+}
+.right {
+background-color: #e5e5e5;
+float: left;
+width: 20%;
+padding: 15px;
+margin-top: 7px;
+text-align: center;
+}
+footer {
+background-color: #e5e5e5;
+text-align: center;
+padding: 10px;
+margin-top: 7px;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 620px) {
+nav,
+main,
+.right {
+width: 100%;
+}
+}
+</style>
+<header>
+<h1>Benvenido!</h1>
+</header>
+<div class="container">
+<!-- Navegación / cotenedor izquierdo -->
+<nav>
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">CV</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+<!-- Contenedor principal -->
+<main>
+<section>
+<h2>Antonio Torralba</h2>
+<p>123</p>
+</section>
+</main>
+<!-- Contenedor secundario / derecho -->
+<div class="right">
+<h1>Info</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+</div>
+<!-- Pie de Página-->
+<footer>
+<p>© copyright labcomII.com</p>
+</footer>   

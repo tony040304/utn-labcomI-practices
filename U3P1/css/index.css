@@ -1,0 +1,30 @@
+
+*{
+    font-family: sans-serif;
+}
+h1{
+    font-size: 24px;
+    color: #242424;
+    width: 900px;
+}
+h2{
+    font-size: 20px;
+    color: #606060;
+    width: 800px;
+}
+p{
+    font-size: 14px;
+}
+ul{
+    font-family: monospace;
+    font-size: 19px;
+}
+*:link{
+    color: black;
+}
+li :link{
+    color: orangered;
+    
+
+}
+
