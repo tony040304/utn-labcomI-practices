@@ -1,11 +1,13 @@
 
 *{
     font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 h1{
     font-size: 24px;
     color: #242424;
     width: 900px;
+    
 }
 h2{
     font-size: 20px;
@@ -14,17 +16,44 @@ h2{
 }
 p{
     font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 ul{
     font-family: monospace;
-    font-size: 19px;
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    list-style-type: none;
+    max-width: 40%;
+}
+li{
+    padding: 10px;
 }
 *:link{
     color: black;
 }
 li :link{
-    color: orangered;
-    
-
+    color: orange;
+    text-decoration: underline;
+}
+ul li:nth-child(2){
+    color: green;
+}
+ul li:nth-child(2) :link{
+    color: green;
+}
+ul li:nth-child(6){
+    color: green;
+}
+ul li:nth-child(6) :link{
+    color: green;
+}
+li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
+body  {
+    background-color: #bcbcbc;
+}
